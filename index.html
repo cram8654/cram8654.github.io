@@ -95,9 +95,6 @@
         <input name="maintenance" type="radio" value="yes" /> Yes <input name="maintenance" type="radio" value="no" /> No
         <p><input type="submit" value="Submit Response" /></p>
       </form>
-        <!--
-      <p><img border="3" src='https://drive.google.com/uc?export=view&id=1KYyTr4uTn30eAdCH6A5QWWtEoGcyWpp0' alt='Ultimate Sprinkler'></p>
-      -->
       <form method="get" onsubmit="setTimeout(function(){window.location.reload();},5000);">
         Please enter a time slot that doesn't conflict with anyone in the table below
         <p>Last name: <input name="lastname" type="text" /></p>
@@ -374,7 +371,9 @@
     }
   </script>
 </body>
-<p align="center"><form method='POST' action='/update' enctype='multipart/form-data'><input type='file' name='Upload Program to Controller'><input type='submit' value='Update'></form></p>
+<form method='POST' action='/update' enctype='multipart/form-data'>
+<p align="center"><input type='file' name='Upload Program to Controller'><input type='submit' value='Update'></p>
+</form>
  <p align="center"> <i> Version 1.11</i></p>
 
 </html>
